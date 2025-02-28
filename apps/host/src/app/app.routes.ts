@@ -9,12 +9,12 @@ export const remoteRoutes: Routes = [
   {
     path: 'mfe1',
     loadChildren: () =>
-      loadRemoteModule('mfe1', './Route').then(m => m.remoteRoutes),
+      loadRemoteModule('mfe1', './Route').then(m => m.remoteRoutes), 
   },
   {
     path: 'mfe2',
     loadChildren: () =>
       loadRemoteModule('mfe2', './Route').then(m => m.remoteRoutes),
   },
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
 ];
